@@ -7,7 +7,6 @@ import { grpahCMSImageLoader } from '../util';
 
 const PostCard = ({ post }) => (
   <div className="bg-white p-0 lg:p-8 pb-12 mb-8">
-    
     <div className="relative overflow-hidden shadow-md pb-80 mb-6">
       <img src={post.featuredImage.url} alt="" className="object-top absolute h-80 w-full object-cover" />
     </div>

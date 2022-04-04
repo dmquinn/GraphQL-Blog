@@ -26,22 +26,18 @@ const PostWidget = ({ categories, slug }) => {
       <h3 className="text-xl mb-8 font-semibold border-b pb-4">{slug ? 'Related Posts' : 'Recent Posts'}</h3>
       {relatedPosts.map((post, index) => (
         <div key={index} className="flex items-center w-full mb-4">
-          <div className="w-16 flex-none">
             <Image
               loader={grpahCMSImageLoader}
               alt={post.title}
-              height="60px"
-              width="60px"
-              unoptimized
-              className="align-middle rounded-full"
+              height="50px"
+              width="50px"
+              optimized
+              className="rounded-full"
               src={post.featuredImage.url}
             />
+            <h5 className="text-gray-700 px-5">{post.title}</h5>
           </div>
-          <div className="flex-grow ml-4">
-            <p className="text-gray-500 font-xs">{moment(post.createdAt).format('MMM DD, YYYY')}</p>
-            <Link href={`/post/${post.slug}`} className="text-md" key={index}>{post.title}</Link>
-          </div>
-        </div>
+    
       ))}
     </div>
   );
