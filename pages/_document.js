@@ -10,6 +10,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <script
+            async
+            src="https://api.countapi.xyz/hitlocalhost:3000com/visits?  callback=callbackName"
+          ></script>
           <meta
             name="viewport"
             content="width=device-width,minimum-scale=1, initial-scale=1"
