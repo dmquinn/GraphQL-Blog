@@ -12,7 +12,7 @@ class MyDocument extends Document {
         <Head>
           <script
             async
-            src="https://api.countapi.xyz/hitlocalhost:3000com/visits?  callback=callbackName"
+            // src="https://api.countapi.xyz/hitlocalhost:3000com/visits? callback=callbackName"
           ></script>
           <meta
             name="viewport"

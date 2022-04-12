@@ -1,8 +1,10 @@
 import { FeaturedPosts } from "../sections/index";
 import { PostCard, Categories, PostWidget, ConnectWidget } from "../components";
 import { getPosts } from "../services";
+import { useState } from "react/cjs/react.development";
 
 export default function Home({ posts }) {
+  const [hasMore, setHasMore] = useState(true);
   return (
     <div className="p-12 mx-auto px-20 mb-8">
       <FeaturedPosts />
